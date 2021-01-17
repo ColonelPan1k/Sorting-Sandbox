@@ -1,0 +1,29 @@
+* TODO Implement sorting algorithms
+** TODO Basic Sorts
+- [ ] Insertion Sort
+- [ ] Selection Sort
+
+** TODO Efficient Sorts
+- [ ] Merge Sort
+- [ ] Heapsort
+  - I'll have to learn more 
+    about heaps for this one
+- [ ] Quicksort
+- [ ] Shellsort
+
+** TODO Bubble Sort and variants
+- [ ] Bubble Sort
+- [ ] Comb sort
+
+** TODO Distribution Sort
+- [ ] Counting Sort
+- [ ] Bucket Sort
+- [ ] Radix sort
+
+** TODO Stupid Sorts
+- [X] Bogosort
+* TODO Make main testing program 
+- [ ] Use fork/exec/wait to test time 
+      of each sorting algorithm
+
+- [ ] Implement random number array generation function
