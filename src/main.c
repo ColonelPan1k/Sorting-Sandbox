@@ -5,14 +5,13 @@
  * 
  */
 
+
+#include "../libs/Common.h"
+#include "../libs/Insertion-Sort.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-#include "libs/Common.h"
-#include "libs/Insertion-Sort.h"
-
-#define LEN 10
 
 
 int*

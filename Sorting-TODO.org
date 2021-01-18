@@ -1,6 +1,6 @@
 * TODO Implement sorting algorithms
 ** TODO Basic Sorts
-- [ ] Insertion Sort
+- [X] Insertion Sort
 - [ ] Selection Sort
 
 ** TODO Efficient Sorts
@@ -28,3 +28,4 @@
 
 - [ ] Implement random number array generation function
 
+ 
