@@ -19,4 +19,3 @@ insertionSort(int* arr, int len){
                 }
         }
 }
-// This is a test

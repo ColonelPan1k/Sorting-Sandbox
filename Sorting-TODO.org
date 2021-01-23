@@ -1,3 +1,17 @@
+* Plan
+
+This program has two components: 
+1. The main section, which handles all the stats and comparisons
+2. The lib section, which holds all the various sorting algorithms
+
+The main section should have a funciton which can take in a pointer 
+to a sorting function, run the fork/exec/wait cycle on the algorithm 
+and return the amount of time it took to run that algorithm.
+-- In the future, I'd like to implement more stat functions, like
+   ones that return the amount of swaps, comparisons, etc. This 
+   would probably be contained in some other function which is called 
+   during the sorting function.
+
 * TODO Implement sorting algorithms
 ** TODO Basic Sorts
 - [X] Insertion Sort
