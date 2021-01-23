@@ -67,45 +67,34 @@ runSort(void (*sortFun)(int*, int), void (*sortFun2)(int*, int), int* arr, int l
                 return -1;
                 
         } else if (pid > 0){
-                clock_t start = clock(), diff;
 
+                time_t start = time(NULL);
                 (*sortFun)(arr, len);
+                time_t end = time(NULL);
 
-                diff = clock() - start;
-                int msec = diff * 100 / CLOCKS_PER_SEC;
-                printf("Sort1: %d seconds %d milliseconds\n", msec/1000, msec%1000);
+                printf("Sort1 Time: %ld sec\n", end - start);
 
                 wait(NULL);
                 
         } else {
-                printf("Starting array: ");
-                printArray(cpyArr, len);
-
-                clock_t start = clock(), diff;
-                
+        
+                time_t start = time(NULL);
                 (*sortFun2)(cpyArr, len);
+                time_t end = time(NULL);
 
-                diff = clock() - start;
-                int msec = diff * 1000 / CLOCKS_PER_SEC;
-
-                printf("Sort2: %d seconds %d milliseconds\n", msec/1000, msec%100);
+                printf("Sort2 Time: %ld sec\n", end - start);
         }
 }
-
-/* Copies an array to a new temp array */
-
-
-
 
 int
 main(int argc, char** argv){
 
-        int arrLen = 11;
+        int arrLen = 100000;
         int* arr = generateArray(arrLen);
-        printf("Your starting array: ");
-        printArray(arr, arrLen);
 
-        runSort(insertionSort, bogosort, arr, arrLen);
+        printf("Sort1: bubbleSort\nSort2: insertionSort\n");
+
+        runSort(bubbleSort, insertionSort, arr, arrLen);
         
 
         
