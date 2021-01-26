@@ -1,9 +1,9 @@
 # Sorting-Sandbox
 
-This is a project made out of my own desire to get better at sorting algorithms.  I thought it would be fun to make a tool to compare different sorting algorithms
-and provide a nice command line interface to play around with everything.  It's also a good excuse to play around a bit with a few things I've wanted to try out
-a bit more, namely `getopt()` and some `fork()/exec()/wait()` type stuff.  This will be a more robust version of my previous Timer project.  That was more of a 
-quick learning experiment with a fun bogosort on the side, whereas this might actually be a bit useful to someone.
+This is a project I've had in my head for a bit.  I've always thought that it would be cool to have a program that could compare different sorting algorithms.  I'm 
+also pretty bad with sorting algorithms in general, so this is also an opportunity to get some more practice with writing out sorting algorithms.  It's also a way
+to parctice some fork()/exec()/wait(), and pthread stuff too.  This is half partially useful CS tool and half experiment in trying out linux system programming 
+concepts. I'm using it as a way to have some fun.
 
 # Usage
 
